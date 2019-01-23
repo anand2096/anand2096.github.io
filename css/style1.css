@@ -1,0 +1,20 @@
+html { 
+  background: url(images/bi.jfif) no-repeat center center fixed; 
+}
+.container-fluid
+{
+    padding:0px;
+}
+#textfo
+{
+  font-size: 20px;
+  font-weight: 20px;
+}
+.tc
+{
+  color: black;
+}
+.tc1
+{
+  color: orange;
+}
