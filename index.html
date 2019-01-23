@@ -226,15 +226,16 @@
       <center>
         <h3 style="color:blue"> CONTACT-ME</h3>
       </center>
-      <div class="jumbotron ">
+      
         <div class="row">
-
-          <div class="col-xs-8">
+     <div class="col-xs-6" style="margin-top: 100px; ">
             <table class="table table-hover " cellpadding="15" id="textfo">
               <tr class="tt">
-                <th class="tc1"><span class="glyhicon glyphicon-user" style="color:black;"></span>email</i>Employee Id:</th>
-                <td><b class="tc">761386<b></td></tr>
-    <tr class="tt"><th class="tc1"><i style="color:black;"class="material-icons">email</i>  Email Id:</th><td><b class="tc">Anand.Jain1@cognizant.com</b></td>
+                <th class="tc1"><span class="glyphicon glyphicon-user" style="color:black;"></span> Employee Id:</th>
+                <td><b class="tc">761386<b></td>
+                            
+               </tr>
+    <tr class="tt"><th class="tc1"><i style="color:black;" class="material-icons">email</i>  Email Id:</th><td><b class="tc">Anand.Jain1@cognizant.com</b></td>
               </tr>
               <tr class="tt">
                 <th class="tc1"><i style="color:black;" class="material-icons">email</i> PersonalEmail Id:</th>
@@ -246,12 +247,26 @@
               </tr>
             </table>
           </div>
-          <div class="col-xs-4">
+          <div class="col-xs-6">
+              <div class="jumbotron ">
+              <div id="googleMap" style="height:400px;width:100%;"></div>
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(18.5964498,73.7339829);
+            var mapProp = {center: myCenter, zoom: 12, scrollwheel: false, draggable: false, mapTypeId: google.maps.MapTypeId.ROADMAP};
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({position: myCenter});
+            marker.setMap(map);
+            marker.setTitle("Avowal Co.");
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqymYGl3LGqoIBCQ_N2T-mcP-hX2gAukg&callback=myMap"></script>
 
+          </div>
           </div>
 
         </div>
-      </div>
+      
     </div>
 
 
@@ -264,36 +279,37 @@
           <h4 style="color:orange"><b>CITY REPORTER</b></h4>
 
         </center>
-        <div clas="row">
-          <div class="col-md-6">
-            <img src="images/p1.PNG" class="img-rounded" alt="Image Not Found"hieght="500px"width="80%">
+        <div class="row">
+          <div class="col-md-4">
+            <img src='images/p1.PNG' class='img-rounded' alt='Image Not Found' width="100%" />
           </div>
-          <div class="col-md-6">
-            <img src="images/p2.PNG" class="img-rounded" alt="Image Not Found" height="300px"width="80%">
+          <div class="col-md-4">
+            <img src="images/p2.PNG" class="img-rounded" alt="Image Not Found" width="100%"/>
           </div>
-         
-
-
-        </div>
+            <div class="col-md-4">
+            <img src="images/p3.PNG" class="img-rounded" alt="Image Not Found"width="100%" />
+          </div>
+     </div>
 </div>
      <br>
      <br>
       
-      <div class="container">  <div class="row">
-          <div clas="col-md-6">
+      <div class="container">  
+          <div class="row">
+          <div class="col-md-4" style="margin-top: 50px">
             <center>
               <h4 style="color:blue">DESCRIPTION:</h4>
             </center>
-            <p style="font:Times New Roman">
-              City Reporter is a Web based Application where you can report any king of problem which you are facing in your daily life.It
-              can be related to electricity,water,sewage etc. City Reporter has two panels one for admin and one for user.User
-              will report his/her problems using user panel and corresponding authority will see the problem in admin panel
+            <p style="font:Times New Roman ;">
+              City Reporter is a Web based Application, which is made using a MVC structue. In this Web Application we can report any kind of problem which we are facing in our daily life.It
+              can be related to electricity,water,sewage etc. City Reporter has two panels one for admin and one for user. User
+              will report his/her problems using user panel and respective authority will see the problem in admin panel
               and they will solve it.
 
             </p>
           </div>
           <br><br>
-          <div class="col-md-6">
+          <div class="col-md-4">
               <center>
               <h4 style="color:blue ;margin-right:500px" >TECHNOLOGY USED:</h4>
             </center>
@@ -325,7 +341,7 @@
               </table>
 
           </div>
-               <div class="col-md-6">
+               <div class="col-md-2">
               <center>
               <h4 style="color:blue ;margin-right:500px" >API INTEGRATED:</h4>
             </center>
@@ -345,6 +361,14 @@
               </table>
 
           </div>
+          <div class="col-md-2" > <center>
+              <h4 style="color:blue ;margin-right:500px" >DATABASE:</h4>
+            </center>
+           <table class="table table hover">
+
+              <tr>
+                <th> MySql</th>
+              </tr></table></div>
         </div>
       
  </div>
